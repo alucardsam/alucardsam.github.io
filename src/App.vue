@@ -160,6 +160,7 @@ onMounted(() => {
 
 <template>
   <!-- <i class="material-icons-round mobile-nav-toggle d-xl-none d-flex align-items-center justify-content-center">menu</i> -->
+  <!-- <i class="bi bi-list mobile-nav-toggle d-xl-none d-flex align-items-center justify-content-center"></i> -->
   <NavbarComp />
   <HeroComp />
 
@@ -168,7 +169,10 @@ onMounted(() => {
 
       <div class="section-title">
         <h2>About</h2>
-        <p>Web Developer Full Stack with over 12 years of experience. Passionate about programming and new technologies. I’d describe myself as a person who tries to grow day by day and exceed each proposed goal. In my personal life I’ve a great family made up of my wife and my two beautiful childs, a five year old boy and a one year old girl.</p>
+        <p>Web Developer Full Stack with over 12 years of experience. Passionate about programming and new technologies.
+          I’d describe myself as a person who tries to grow day by day and exceed each proposed goal. In my personal life
+          I’ve a great family made up of my wife and my two beautiful childs, a five year old boy and a one year old girl.
+        </p>
       </div>
 
       <div class="row">
@@ -188,7 +192,8 @@ onMounted(() => {
               <ul>
                 <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>19 Sep 1987</span></li>
                 <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong>
-                  <span>https://alucardsam.github.io/</span></li>
+                  <span>https://alucardsam.github.io/</span>
+                </li>
                 <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+52 961 113 5699</span></li>
                 <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Tuxtla Gutiérrez, Chiapas,
                     México</span></li>
@@ -342,7 +347,8 @@ onMounted(() => {
 
       <div class="section-title">
         <h2>Resume</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut consequatur ratione sint tempore saepe sit! Officiis similique mollitia sint excepturi, possimus fugit quis architecto ut eos harum hic amet quasi.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut consequatur ratione sint tempore saepe sit!
+          Officiis similique mollitia sint excepturi, possimus fugit quis architecto ut eos harum hic amet quasi.</p>
       </div>
 
       <div class="row">
@@ -350,7 +356,9 @@ onMounted(() => {
           <h3 class="resume-title">Sumary</h3>
           <div class="resume-item pb-0">
             <h4>Samuel González</h4>
-            <p><em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero modi, eaque sunt fugiat vel nobis quaerat aliquid necessitatibus illum! Nemo maiores nostrum excepturi doloribus reiciendis laudantium vitae, numquam tempore animi.</em></p>
+            <p><em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero modi, eaque sunt fugiat vel nobis
+                quaerat aliquid necessitatibus illum! Nemo maiores nostrum excepturi doloribus reiciendis laudantium
+                vitae, numquam tempore animi.</em></p>
             <ul>
               <li>Tuxtla Gutiérrez, Chiapas, México</li>
               <li>+52 961 113 5699</li>
@@ -363,7 +371,9 @@ onMounted(() => {
             <h4>Bachelor of Computer Systems Engineer</h4>
             <h5>2006 -2010</h5>
             <p><em>Instituto Tecnológico de Tapachula</em></p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ipsa rem deleniti dolor sequi! Vitae doloremque molestiae quas pariatur ratione officia, inventore, eligendi perferendis quasi est fuga laudantium facilis repellendus?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ipsa rem deleniti dolor sequi! Vitae
+              doloremque molestiae quas pariatur ratione officia, inventore, eligendi perferendis quasi est fuga
+              laudantium facilis repellendus?</p>
           </div>
         </div>
         <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
@@ -398,7 +408,8 @@ onMounted(() => {
 
       <div class="section-title">
         <h2>Portfolio</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, autem dolore! Blanditiis, itaque ratione dolor, repellat incidunt labore in officia magnam quod, maiores ipsam illum quas sequi rem praesentium quam.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, autem dolore! Blanditiis, itaque ratione dolor,
+          repellat incidunt labore in officia magnam quod, maiores ipsam illum quas sequi rem praesentium quam.</p>
       </div>
 
       <div class="row" data-aos="fade-up">
@@ -447,7 +458,7 @@ onMounted(() => {
         <p>lorem</p>
       </div>
 
-      <div class="row" data-aos="fade-in">
+      <!-- <div class="row" data-aos="fade-in">
 
         <div class="col-lg-12 mt-5 mt-lg-0 d-flex align-items-stretch">
           <form action="#" method="post" role="form" class="php-email-form">
@@ -474,16 +485,21 @@ onMounted(() => {
               <div class="error-message"></div>
               <div class="sent-message">Your message has been sent. Thank you!</div>
             </div>
-          <div class="text-center"><a class="btn btn-primary">Send Message</a></div>
-        </form>
-      </div>
+            <div class="text-center"><a class="btn btn-primary">Send Message</a></div>
+          </form>
+        </div>
+
+      </div> -->
 
     </div>
+  </section>
+  <FooterComp />
+  <!-- <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a> -->
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><span class="material-icons-round">arrow_upward</span></a>
+</template>
 
-  </div>
-</section>
-<FooterComp />
-<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><span
-    class="material-icons-round">arrow_upward</span></a></template>
-
-<style scoped></style>
+<style scoped>
+.material-icons-round {
+  color: white;
+}
+</style>
